@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import SingleCards from '../SingleCards/SingleCards';
+import './Cart.css'
 
 const Cart = () => {
   
@@ -7,12 +9,18 @@ const Cart = () => {
   useEffect(()=>{
       fetch("user.json")
       .then(res => res.json())
-      .then(data => console.log(data))
+      .then(data => setUsers(data))
   },[]);
-
     return (
-        <div>
-            
+        <div className='main-Cart'>
+            <div>
+                {
+                    users.map(user =><SingleCards user = {user} key ={user.id}></SingleCards>)
+                }
+            </div>
+            <div>
+                 <h2>Container</h2>
+            </div>
         </div>
     );
 };

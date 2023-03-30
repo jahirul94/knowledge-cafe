@@ -1,0 +1,24 @@
+.single-Cards img{
+    width: 100%;
+    padding: 20px;
+}
+.user-id img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.user-id{
+    display: flex;
+   align-items: center;
+}
+.user p{
+    margin-top: -25px;
+ 
+}
+
+.text{
+     margin-left: 25px;
+     font-size: 40px;
+     margin-top: -15px;
+}
