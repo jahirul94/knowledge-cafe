@@ -4,25 +4,30 @@
 }
 
 .display-details{
-    background-color: gray;
     width: 95%;
     border-radius: 10px;
-    margin-top: 20px;
     position: sticky;
     top: 0;
-    height: 500px;
+    height: 700px;
+    margin-top: 20px;
+    padding-top: 20px;
 }
 .spent-time{
       color: #6047EC;
-      padding-left: 20px;
-      padding-right: 10px;
+      background-color: rgba(96, 71, 236, 0.1);
+      padding: 10px 10px 10px 20px;
+      border-radius: 10px;
+      width: 100%;
 }
 .book-mark-blog{
-    padding-left: 20px;
-    padding-right: 10px;
+    padding: 0px 10px 0px 20px ;
     width: 100%;
+    background-color: rgba(17, 17, 17, 0.05);;
+    height: 500px;
+    border-radius: 15px;
 }
 
-.book-marks{
-    padding-bottom: 50px;
+.book-mark-blog h2{
+    padding-top: 20px;
+    margin-bottom: 30px;
 }

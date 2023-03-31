@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBookBookmark, faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 import './SingleCards.css'
 
 const SingleCards = (props) => {
@@ -21,10 +21,10 @@ const SingleCards = (props) => {
                     </div>
                     <div className='bookmark'>
                         <p>{read} min read</p>
-                        <FontAwesomeIcon onClick={()=>calculateBookMark(title)} icon={faBookBookmark} />
+                        <FontAwesomeIcon onClick={()=>calculateBookMark(title)} icon={faBookmark} />
                     </div>
                </div>
-              <h2 className='text'>{title}</h2>
+              <h3 className='text'>{title}</h3>
             <div className='markAsLink'>
                  <a  onClick={()=>calculateTotalTime(read)}>Mark as read</a>
             </div>

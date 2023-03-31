@@ -38,9 +38,6 @@ console.log(bookmarks)
     }
  }
     
-//  const addedTitle = products.find(bookmark => bookmarks.id == id)   ;
-
-
     return (
         <div className='main-Cart'>
             <div>
@@ -55,7 +52,7 @@ console.log(bookmarks)
                  <div className='book-mark-blog'>
                         <h2>Bookmarked Blogs : {updateBM}</h2>
                         {
-                            bookmarks.map(bookmark => <h4> {bookmark}</h4>)
+                            bookmarks.map(bookmark => <h3> {bookmark}</h3>)
                         }
                  </div>
             </div>

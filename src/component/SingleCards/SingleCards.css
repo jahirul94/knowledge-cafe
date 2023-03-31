@@ -39,6 +39,7 @@
 .text{
      font-size: 40px;
      margin-top: -15px;
+     padding: 10px 0px 10px 0px;
 }
 .markAsLink{
     margin-bottom: 60px;
