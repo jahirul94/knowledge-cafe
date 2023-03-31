@@ -21,26 +21,25 @@ const Cart = () => {
   };
 //  bookmark update 
 const [updateBM , setUpdateBM] = useState(0);
- const calculateBookMark =()=>{
-    const bmField = JSON.parse(updateBM);
+const [bookmarks , setBookmarks] = useState([]);
+ const calculateBookMark =(title)=>{
+//    const availableDat = bookmarks.find(title)
+    // if(availableData)
+     const newTitle =[...bookmarks , title ];
+     const bmField = JSON.parse(updateBM);
      const newBM = bmField + 1 ;
      setUpdateBM(newBM)
+     setBookmarks(newTitle)
  }
-//   bookmarksmarks
-
- const [bookmarks , setBookmarks] = useState([]);
-   const showBookmarks = title =>{
-        const oldTitle = bookmarks ;
-        const newTitle = oldTitle + title;
-        setBookmarks(newTitle)
-   }
+    
+//  const addedTitle = products.find(bookmark => bookmarks.id == id)   ;
 
 
     return (
         <div className='main-Cart'>
             <div>
                 {
-                    users.map(user =><SingleCards user = {user} key ={user.id} calculateTotalTime={calculateTotalTime} calculateBookMark={calculateBookMark}  showBookmarks={showBookmarks}></SingleCards>)
+                    users.map(user =><SingleCards user = {user} key ={user.id} calculateTotalTime={calculateTotalTime} calculateBookMark={calculateBookMark}></SingleCards>)
                 }
             </div>
             <div className='display-details'>
@@ -49,7 +48,9 @@ const [updateBM , setUpdateBM] = useState(0);
                  </div>
                  <div className='book-mark-blog'>
                         <h2>Bookmarked Blogs : {updateBM}</h2>
-                        <h4> {bookmarks}</h4>
+                        {
+                            bookmarks.map(bookmark => <h4> {bookmark}</h4>)
+                        }
                  </div>
             </div>
         </div>

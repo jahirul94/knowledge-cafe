@@ -4,10 +4,9 @@ import { faBookBookmark, faCoffee } from '@fortawesome/free-solid-svg-icons'
 import './SingleCards.css'
 
 const SingleCards = (props) => {
-    const {img , user_picture , name , last_seen , read , title} =props.user ;
+    const {img , user_picture , name , last_seen , read , title} = props.user ;
      const calculateTotalTime = props.calculateTotalTime;
      const calculateBookMark = props.calculateBookMark;
-     const  showBookmarks = props.showBookmarks;
     // console.log(user)
     return (
         <div className='single-Cards'>
@@ -22,7 +21,7 @@ const SingleCards = (props) => {
                     </div>
                     <div className='bookmark'>
                         <p>{read} min read</p>
-                        <FontAwesomeIcon onClick={()=>showBookmarks(title)} icon={faBookBookmark} />
+                        <FontAwesomeIcon onClick={()=>calculateBookMark(title)} icon={faBookBookmark} />
                     </div>
                </div>
               <h2 className='text'>{title}</h2>
