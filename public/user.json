@@ -1,6 +1,6 @@
 [
   {
-    "id": "6425bb2ff7b8d48b7b1067f0",
+    "id": "001",
     "user_picture": "./user-image/user-2.jpg",
     "img": "./image/img_2.jpg",
     "last_seen":"Mar 15 (14 Days ago)",
@@ -9,30 +9,30 @@
     "title" : "How to get your first job as a self-taught programmer"
   },
   {
-    "id": "6425bb2fb0fc54e7c793ce29",
+    "id": "002",
     "user_picture": "./user-image/user-3.jpg",
     "img": "./image/img_3.jpg",
     "last_seen": "Mar 27 (3 Days ago)",
     "name": "Everett Boyd",
     "read" : 7 ,
-    "title" : "How to get your first job as a self-taught programmer"
+    "title" : "The Benefits of facebook"
   },
   {
-    "id": "6425bb2f4cc6a2c0ac377d6a",
+    "id": "003",
     "user_picture": "./user-image/user-4.jpg",
     "img": "./image/img_4.jpg",
     "last_seen":"Mar 29 (1 Days ago)",
     "name": "Patty Ballard",
     "read" : 6 ,
-    "title" : "How to get your first job as a self-taught programmer"
+    "title" : "About chatGTP"
   },
   {
-    "id": "6425bb2f9cf207ea4c79b305",
+    "id": "004",
     "user_picture": "./user-image/user-7.jpg",
     "img": "./image/img-7.jpg",
     "last_seen": "Mar 20 (2 Days ago)",
     "name": "Ebony Wheeler",
     "read" : 20 ,
-    "title" : "How to get your first job as a self-taught programmer"
+    "title" : "Facebook bat"
   }
 ]

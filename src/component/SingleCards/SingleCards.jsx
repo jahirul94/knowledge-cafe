@@ -4,10 +4,10 @@ import { faBookBookmark, faCoffee } from '@fortawesome/free-solid-svg-icons'
 import './SingleCards.css'
 
 const SingleCards = (props) => {
-    const {img , user_picture , name , last_seen , read , title} = props.user ;
+    const {img , user_picture , name , last_seen , read , title , id} = props.user ;
      const calculateTotalTime = props.calculateTotalTime;
      const calculateBookMark = props.calculateBookMark;
-    // console.log(user)
+    console.log(id)
     return (
         <div className='single-Cards'>
               <img src={img} alt="" />

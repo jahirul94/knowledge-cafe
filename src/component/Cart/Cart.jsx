@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SingleCards from '../SingleCards/SingleCards';
-import './Cart.css'
+import './Cart.css';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Cart = () => {
   
@@ -22,14 +23,19 @@ const Cart = () => {
 //  bookmark update 
 const [updateBM , setUpdateBM] = useState(0);
 const [bookmarks , setBookmarks] = useState([]);
- const calculateBookMark =(title)=>{
-//    const availableDat = bookmarks.find(title)
-    // if(availableData)
-     const newTitle =[...bookmarks , title ];
-     const bmField = JSON.parse(updateBM);
-     const newBM = bmField + 1 ;
-     setUpdateBM(newBM)
-     setBookmarks(newTitle)
+console.log(bookmarks)
+ const calculateBookMark = title =>{
+    const exist = bookmarks.includes(title);
+    if(exist){
+         toast("Your Bookmark hasbeen added !");
+    }
+    else{
+        const newTitle =[...bookmarks , title ];
+        const bmField = JSON.parse(updateBM);
+        const newBM = bmField + 1 ;
+        setUpdateBM(newBM)
+        setBookmarks(newTitle) 
+    }
  }
     
 //  const addedTitle = products.find(bookmark => bookmarks.id == id)   ;
