@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookBookmark, faCoffee } from '@fortawesome/free-solid-svg-icons'
 import './SingleCards.css'
 
-const SingleCards = ({user}) => {
-    const {img , user_picture , name , last_seen , read} = user ;
-    console.log(user)
+const SingleCards = (props) => {
+    const {img , user_picture , name , last_seen , read , title} =props.user ;
+     const calculateTotalTime = props.calculateTotalTime;
+     const calculateBookMark = props.calculateBookMark;
+     const  showBookmarks = props.showBookmarks;
+    // console.log(user)
     return (
         <div className='single-Cards'>
               <img src={img} alt="" />
@@ -18,13 +21,13 @@ const SingleCards = ({user}) => {
                         </div>
                     </div>
                     <div className='bookmark'>
-                        <p>{read}</p>
-                        <FontAwesomeIcon icon={faBookBookmark} />
+                        <p>{read} min read</p>
+                        <FontAwesomeIcon onClick={()=>showBookmarks(title)} icon={faBookBookmark} />
                     </div>
                </div>
-              <h2 className='text'>How to get your first job as a self- <br/> taught programmer</h2>
+              <h2 className='text'>{title}</h2>
             <div className='markAsLink'>
-                 <a href="./mark">Mark as read</a>  
+                 <a  onClick={()=>calculateTotalTime(read)}>Mark as read</a>
             </div>
         </div>
     );

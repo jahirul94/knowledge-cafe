@@ -1,3 +1,9 @@
+.single-Cards{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
 .single-Cards img{
     width: 100%;
     border-radius: 20px;
@@ -38,4 +44,9 @@
     margin-bottom: 60px;
     margin-top: -20px;
     font-size: 20px;
+}
+
+.markAsLink a{
+    text-decoration: underline#6047EC;
+    color: #6047EC;
 }
