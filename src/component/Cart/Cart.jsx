@@ -26,7 +26,7 @@ const [bookmarks , setBookmarks] = useState([]);
  const calculateBookMark = title =>{
     const exist = bookmarks.includes(title);
     if(exist){
-         toast("Your Bookmark hasbeen added !");
+         toast("You Have Already Bookmarked This Blog");
     }
     else{
         const newTitle =[...bookmarks , title ];
