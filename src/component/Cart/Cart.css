@@ -31,3 +31,9 @@
     padding-top: 20px;
     margin-bottom: 30px;
 }
+
+@media screen and (max-width: 768px) {
+        .main-Cart {
+          grid-template-columns: 1fr;
+        }
+ }
