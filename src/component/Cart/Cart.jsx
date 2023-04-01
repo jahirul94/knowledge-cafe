@@ -23,7 +23,6 @@ const Cart = () => {
 //  bookmark update 
 const [updateBM , setUpdateBM] = useState(0);
 const [bookmarks , setBookmarks] = useState([]);
-console.log(bookmarks)
  const calculateBookMark = title =>{
     const exist = bookmarks.includes(title);
     if(exist){

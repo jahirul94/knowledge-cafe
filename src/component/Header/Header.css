@@ -5,6 +5,10 @@
     padding-left: 40px;
     border-radius: 10px;
 }
+.nav-bar h1{
+    font-size: 40px;
+    color: black
+}
 .header{
     display: flex;
     align-items: center;

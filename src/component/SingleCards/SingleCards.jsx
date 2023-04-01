@@ -7,7 +7,6 @@ const SingleCards = (props) => {
     const {img , user_picture , name , last_seen , read , title , id} = props.user ;
      const calculateTotalTime = props.calculateTotalTime;
      const calculateBookMark = props.calculateBookMark;
-    console.log(id)
     return (
         <div className='single-Cards'>
               <img src={img} alt="" />

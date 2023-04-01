@@ -1,0 +1,13 @@
+.q-container{
+    padding: 50px 20px 40px 30px;
+    border-radius: 15px;
+    background-color:rgba(211, 206, 158, 0.452);
+}
+
+.ans{
+    padding-left: 20px;
+}
+.question{
+    font-weight: 700;
+}
+
